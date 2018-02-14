@@ -1,4 +1,5 @@
-widetolong_mstate <- function(data1, Card.number, Month.on.ART, Endtime, Current.ARV.regimen) {
+widetolong_mstate <- function(data1) {
+  #the data should have the following column: Card.number, Month.on.ART, Endtime, Current.ARV.regimen
   attach(data1)
   pos.ch <- c("1a","1b","1c","1d","1e","1f","2a","2b","2c","2d","2e")
   uni<-unique(Card.number)
