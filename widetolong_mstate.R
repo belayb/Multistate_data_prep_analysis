@@ -1,5 +1,8 @@
+# Tis function is used to prepare treatment history data of HIV patients under HARRT to a data format that is suitable for multstate anaysis. i.e one line for each transition for which a subject is at risk
+#the data should have the following column: Card.number, Month.on.ART, Endtime, Current.ARV.regimen
+
 widetolong_mstate <- function(data1) {
-  #the data should have the following column: Card.number, Month.on.ART, Endtime, Current.ARV.regimen
+ 
   attach(data1)
   pos.ch <- c("1a","1b","1c","1d","1e","1f","2a","2b","2c","2d","2e")
   uni<-unique(Card.number)
