@@ -40,7 +40,7 @@ widetolong_mstate <- function(data1) {
   
   status <- as.numeric(for.sta.vec==as.character( for.to))
   
-  df.belaya<-data.frame(card.number=rep.card.no,Month.on.ART=rep.start,
+  long_format_data<-data.frame(card.number=rep.card.no,Month.on.ART=rep.start,
                         Endtime=rep.for.end,From.regimen=rep.for.from,To.regimen=for.to,Status=status)
-  return(df.belaya)
+  return(long_format_data)
 }
